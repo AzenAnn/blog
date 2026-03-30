@@ -1,0 +1,17 @@
+:root {
+  --md-text-font: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Noto Sans CJK SC", sans-serif;
+  --md-code-font: "JetBrains Mono", "Cascadia Code", "Consolas", monospace;
+  --md-primary-fg-color: #334155;
+  --md-accent-fg-color: #2563eb;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-weight: 700;
+}
+
+.md-typeset code {
+  border-radius: 0.35rem;
+}

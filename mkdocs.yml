@@ -1,0 +1,86 @@
+site_name: Az_Jack的专业课笔记
+site_description: 课程笔记、知识总结与学习记录
+site_author: Az
+site_url: https://github.com/AzenAnn/blog/
+repo_url: https://github.com/AzenAnn/blog
+repo_name: AzenAnn/blog
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  font: false
+  icon:
+    logo: material/book-open-page-variant
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: 跟随系统
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到浅色模式
+
+nav:
+  - 首页: index.md
+  - 专业课:
+    - professional/index.md
+    - 数字电路与逻辑设计: professional/digital-logic.md
+    - 计算机组成原理: professional/computer-organization.md
+  - 算法:
+    - algorithms/index.md
+    - 图论: algorithms/graph.md
+  - 博客:
+    - blog/index.md
+
+plugins:
+  - search
+  - blog:
+      blog_dir: blog
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/AzenAnn
+
+copyright: Copyright &copy; 2026 Az
