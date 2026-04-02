@@ -15,8 +15,6 @@ theme:
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
-    - navigation.sections
-    - navigation.indexes
     - navigation.top
     - content.code.copy
     - content.action.edit
@@ -46,18 +44,31 @@ nav:
   - 首页: index.md
   - 专业课:
     - professional/index.md
-    - 数字电路与逻辑设计: professional/digital-logic.md
-    - 计算机组成原理: professional/computer-organization.md
+    - 数字电路与逻辑设计:
+      - 课程概览: professional/digital-logic.md
+    - 计算机组成原理:
+      - 课程概览: professional/computer-organization.md
+    - C++语言程序设计:
+      - 课程概览: professional/cpp/readme.md
+      - 从C到C++(一): professional/cpp/Lec01-1.md
+      - 从C到C++(二): professional/cpp/Lec01-2.md
+
   - 算法:
     - algorithms/index.md
     - 图论: algorithms/graph.md
   - 博客:
     - blog/index.md
-
+      
+  - 人工智能:
+    - ai/index.md
+    - 深度学习: ai/dl/readme.md
 plugins:
   - search
   - blog:
       blog_dir: blog
+
+hooks:
+  - hooks/obsidian_callouts.py
 
 markdown_extensions:
   - admonition
