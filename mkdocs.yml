@@ -62,6 +62,11 @@ nav:
   - 人工智能:
     - ai/index.md
     - 深度学习: ai/dl/readme.md
+
+  - 自学栏目:
+    - selfstudy/readme.md
+    - R语言: 
+      - 引言: selfstudy/R/readme.md
 plugins:
   - search
   - blog:
